@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LibraryFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="23dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="#222222"
+                android:letterSpacing="-0.02"
+                android:fontFamily="@font/gothic"
+                android:textFontWeight="700"
+                android:lineSpacingExtra="3sp"
+                android:text="읽고 있는 책"
+                />
+            <View
+                android:layout_marginLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/light_grey"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_marginTop="16dp"
+            android:id="@+id/main_viewPager"
+            android:layout_gravity="bottom"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:paddingEnd="@dimen/card_padding"
+            android:paddingLeft="@dimen/card_padding"
+            android:paddingRight="@dimen/card_padding"
+            android:paddingStart="@dimen/card_padding"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="#222222"
+                android:letterSpacing="-0.02"
+                android:fontFamily="@font/gothic"
+                android:textFontWeight="700"
+                android:lineSpacingExtra="3sp"
+                android:text="나의 책 리스트"
+                />
+            <View
+                android:layout_marginLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/light_grey"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMainBookList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="190dp"
+            tools:layout_editor_absoluteY="265dp" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

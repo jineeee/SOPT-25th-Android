@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/it_navigation_menu1"
+        android:icon="@drawable/library_icon_activated"
+        android:title="내 서제" />
+
+    <item
+        android:id="@+id/it_navigation_menu2"
+        android:icon="@drawable/home_cion_inactivated"
+        android:title="홈" />
+
+    <item
+        android:id="@+id/it_navigation_menu3"
+        android:icon="@drawable/account_icon_inactivated"
+        android:title="내 계정" />
+
+</menu>

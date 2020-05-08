@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:id="@+id/cl_item_book_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_item_book_cover_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:src="@drawable/book_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_item_book_name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="9sp"
+        android:textColor="@color/darkblue_grey"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="1sp"
+        android:text="생각을 선물하는 남자"
+        android:fontFamily="@font/gothic"
+        android:gravity="center_horizontal"
+        android:textFontWeight="700"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_item_book_cover_id" />
+
+    <TextView
+        android:id="@+id/tv_item_book_writer_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8.5sp"
+        android:textColor="@color/middle_grey"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="1.5sp"
+        android:gravity="center_horizontal"
+        android:text="유형일"
+        android:fontFamily="@font/gothic"
+        android:textFontWeight="700"
+        android:layout_marginTop="3.2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_book_name_id" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

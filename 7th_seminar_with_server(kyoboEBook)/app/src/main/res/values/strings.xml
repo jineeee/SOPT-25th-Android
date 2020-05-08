@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="book_title_1">상속의 역사</string>
+    <string name="book_title_2">쓰기의 모든 것</string>
+    <string name="book_title_3">해러웨이 선언문</string>
+    <string name="book_writer_1">백승종</string>
+    <string name="book_writer_2">김태원</string>
+    <string name="book_writer_3">도나 해러웨이 / 황희선</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+>
+    <!--android:iconTint="#134bde"-->
+<item
+    android:id="@+id/menu_myLibrary"
+    android:title="서재"
+    android:enabled="true"
+    android:iconTint="#134bde"
+    android:icon="@drawable/library_icon_activated">
+</item>
+
+<item
+    android:id="@+id/menu_home"
+    android:title="홈"
+    android:enabled="true"
+    android:iconTint="#134bde"
+    android:icon="@drawable/home_cion_activated">
+</item>
+
+<item
+   android:id="@+id/menu_myAccount"
+   android:title="내 계정"
+   android:enabled="true"
+    android:iconTint="#134bde"
+   android:icon="@drawable/account_icon_activated">
+</item>
+
+</menu>

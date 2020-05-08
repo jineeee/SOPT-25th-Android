@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_main_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="57dp"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/txt_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="46dp"
+                android:fontFamily="@font/gothic_080"
+                android:textColor="#222222"
+                android:text="책장 속 발견"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_main_ad" />
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="227dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="21dp"
+                android:background="#e2e2e2"
+                app:layout_constraintBottom_toTopOf="@id/homeFind_txt_author"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/txt_first"
+                app:layout_constraintTop_toBottomOf="@+id/rv_main_ad"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/homeFind_txt_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="9dp"
+                android:text="디자인에 집중하라"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_first" />
+
+            <TextView
+                android:id="@+id/homeFind_txt_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="와 함께 꽂혀있는 책이에요"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/homeFind_txt_book"
+                app:layout_constraintTop_toBottomOf="@+id/txt_first" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_home_Find"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="7dp"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/homeFind_txt_author" />
+
+            <TextView
+                android:id="@+id/txt_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="54dp"
+                android:fontFamily="@font/gothic_080"
+                android:textColor="#222222"
+                android:text="취향이 비슷한 사람들"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_home_Find" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="153dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="21dp"
+                android:background="#e2e2e2"
+                app:layout_constraintBottom_toTopOf="@id/txt_context"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/txt_second"
+                app:layout_constraintTop_toBottomOf="@+id/rv_home_Find"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/txt_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="9dp"
+                android:text="이성민님"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_second" />
+
+            <TextView
+                android:id="@+id/txt_context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="과 취향이 비슷한 사람들은 이런 책도 좋아해요"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/txt_user"
+                app:layout_constraintTop_toBottomOf="@+id/txt_second" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_home_taste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="7dp"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_context" />
+
+            <TextView
+                android:id="@+id/txt_custom_keyword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="52dp"
+                android:fontFamily="@font/gothic_080"
+                android:textColor="#222222"
+                android:text="이성민님의 맞춤 키워드"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv_home_taste" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="153dp"
+                android:layout_height="1dp"
+                android:background="#e2e2e2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/txt_custom_keyword"
+                app:layout_constraintTop_toBottomOf="@+id/rv_home_taste" />
+
+            <TextView
+                android:id="@+id/txt_context_ck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="9dp"
+                android:text="내게 맞는 추천 키워드를 만나보세요"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_custom_keyword" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_hashtag_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txt_context_ck">
+
+                <ImageView
+                    android:id="@+id/img_custom_keyword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/keword_img"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_hashtag_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="메인 해시태그"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/gothic_080"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/img_custom_keyword"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/img_custom_keyword" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/txt_hashtag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="16dp"
+                android:text="#조직 #리더 #경영 #애자일 #리더십 #팀 #인게이지먼트 #조직"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_hashtag_container" />
+
+            <TextView
+                android:id="@+id/txt_today_best_seller"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="오늘의 베스트셀러"
+                android:textSize="20sp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="54dp"
+                android:fontFamily="@font/gothic_080"
+                android:textColor="#222222"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_hashtag" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="153dp"
+                android:layout_height="1dp"
+                android:background="#e2e2e2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/view1"
+                app:layout_constraintTop_toBottomOf="@+id/txt_context_bs" />
+
+            <TextView
+                android:id="@+id/txt_context_bs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="9dp"
+                android:text="순위 급상승! 베스트셀러를 만나보세요"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_today_best_seller" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_bestseller"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp"
+                android:layout_marginTop="14dp"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_context_bs" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
